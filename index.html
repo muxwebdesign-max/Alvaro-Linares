@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álvaro Linares | Diseño de Interiores</title>
+    <!-- Favicon SVG (Á in accent-red) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' x='50%' text-anchor='middle' font-size='90' font-family='Playfair Display, serif' fill='%23C8102E'>Á</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- CSS y JS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header transparent" id="mainHeader">
+        <div class="header-container">
+            <div class="header-logo-placeholder"></div>
+            <!-- Language Selector -->
+            <div class="lang-selector-wrapper">
+                <button class="lang-btn" aria-haspopup="true" aria-expanded="false" id="langBtn">ES</button>
+                <ul class="lang-dropdown" id="langDropdown">
+                    <li><button class="lang-option" data-lang="es">Español</button></li>
+                    <li><button class="lang-option" data-lang="en">English</button></li>
+                    <li><button class="lang-option" data-lang="de">Deutsch</button></li>
+                    <li><button class="lang-option" data-lang="fr">Français</button></li>
+                    <li><button class="lang-option" data-lang="zh">中文</button></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="heroSection">
+        <video 
+            class="hero-video" 
+            autoplay 
+            muted 
+            loop 
+            playsinline>
+            <source src="IMG/grok-video-453c34eb-ee96-4713-ab7c-b16e359ac10a (2).mp4" type="video/mp4">
+            Tu navegador no soporta vídeos HTML5.
+        </video>
+        
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <h1 class="logo-text" data-i18n="hero_title">ÁLVARO LINARES</h1>
+        </div>
+
+        <div class="scroll-indicator">
+            <span class="scroll-text" data-i18n="scroll_text">Descubrir</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+        
+        <!-- Obras / Portfolio Section -->
+        <section class="portfolio-section" id="obras">
+            <div class="container">
+                <h2 class="section-title sr-only" data-i18n="portfolio_title">Obras y Proyectos</h2>
+                <div class="masonry-grid">
+                    <div class="masonry-item"><img src="IMG/IMG_0672.PNG" alt="Proyecto Interiorismo 1" loading="lazy" class="ig-crop"></div>
+                    <div class="masonry-item"><img src="IMG/IMG_0673.PNG" alt="Proyecto Interiorismo 2" loading="lazy" class="ig-crop"></div>
+                    <div class="masonry-item"><img src="IMG/IMG_0674.PNG" alt="Proyecto Interiorismo 3" loading="lazy" class="ig-crop"></div>
+                    <div class="masonry-item"><img src="IMG/IMG_0675.PNG" alt="Proyecto Interiorismo 4" loading="lazy" class="ig-crop"></div>
+                    <div class="masonry-item"><img src="IMG/IMG_0676.PNG" alt="Proyecto Interiorismo 5" loading="lazy" class="ig-crop"></div>
+                    <div class="masonry-item"><img src="IMG/IMG_0678.PNG" alt="Proyecto Interiorismo 6" loading="lazy" class="ig-crop"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ubicación y Horarios Integrados -->
+        <section class="info-section">
+            <div class="container info-grid">
+                <!-- Ubicación -->
+                <div class="info-column location-col">
+                    <div class="info-icon">
+                        <!-- Pin SVG icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </div>
+                    <h3 class="info-subtitle" data-i18n="location_title">Ubicación</h3>
+                    <a href="https://maps.app.goo.gl/6Nhrk9QPAQuUq2SBA" target="_blank" rel="noopener noreferrer" class="info-text location-link">Avda. Andalucía 15, 17, Cádiz 11007</a>
+                </div>
+
+                <!-- Horarios -->
+                <div class="info-column schedule-col">
+                    <h3 class="info-subtitle" data-i18n="schedule_title">Horario</h3>
+                    <table class="schedule-table">
+                        <tbody>
+                            <tr>
+                                <td data-i18n="mon_thu">Lunes a Jueves</td>
+                                <td>9:30–14:00 & 17:30–21:00</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="friday">Viernes</td>
+                                <td>9:30–14:00 & 17:00–20:00</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="weekend">Sábado y Domingo</td>
+                                <td data-i18n="closed">Cerrado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section class="contact-section">
+            <div class="container contact-container">
+                <h2 class="section-title text-center" data-i18n="contact_title">Contacto</h2>
+                
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Nombre" required data-i18n-placeholder="contact_name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required data-i18n-placeholder="contact_email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Mensaje" rows="1" required data-i18n-placeholder="contact_message"></textarea>
+                    </div>
+
+                    <!-- Botón y Legal Checkbox Integrados Estéticamente -->
+                    <div class="form-footer">
+                        <label class="custom-checkbox-wrapper">
+                            <input type="checkbox" id="legalCheckbox" class="native-checkbox" required>
+                            <span class="custom-checkbox"></span>
+                            <span class="legal-text" data-i18n="legal_checkbox">Acepto los términos legales y la política de privacidad</span>
+                        </label>
+                        <p class="error-message" id="legalError" data-i18n="legal_error">Debe aceptar los términos legales para continuar.</p>
+                        
+                        <button type="submit" class="submit-btn" data-i18n="submit_btn">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer Multinivel -->
+    <footer class="site-footer">
+        <div class="container">
+            <!-- Nivel Superior: Redes Sociales -->
+            <div class="footer-level footer-social">
+                <a href="https://www.instagram.com/alvarolinaresinteriores/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+                    <!-- Instagram SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="https://www.facebook.com/p/Alvaro-Linares-Interiores-100081583459265/?locale=es_ES" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-link">
+                    <!-- Facebook SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                </a>
+            </div>
+
+            <!-- Nivel Intermedio: Contacto Rápido -->
+            <div class="footer-level footer-contact">
+                <a href="mailto:Info@alvarolinares.es" class="footer-email">Info@alvarolinares.es</a>
+                <a href="https://maps.app.goo.gl/6Nhrk9QPAQuUq2SBA" target="_blank" rel="noopener noreferrer" class="footer-address location-link">Avda. Andalucía 15, 17, Cádiz 11007</a>
+            </div>
+
+            <!-- Nivel Inferior: Copyright -->
+            <div class="footer-level footer-legal">
+                <p class="copyright">
+                    &copy; <span id="currentYear"></span> Álvaro Linares Interiores. <span data-i18n="rights_reserved">Todos los derechos reservados.</span> 
+                    <span class="legal-links">
+                        <a href="#" data-i18n="legal_notice">Aviso Legal</a> | 
+                        <a href="privacidad.html" data-i18n="privacy_policy">Política de Privacidad</a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Banner de Cookies -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <p data-i18n="cookie_text">Utilizamos cookies propias y de terceros para mejorar nuestros servicios y mostrarle publicidad relacionada con sus preferencias mediante el análisis de sus hábitos de navegación.</p>
+            <div class="cookie-actions">
+                <button class="cookie-btn cookie-accept" id="acceptCookies" data-i18n="cookie_accept">Aceptar todas</button>
+                <button class="cookie-btn cookie-reject" id="rejectCookies" data-i18n="cookie_reject">Rechazar / Configurar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
